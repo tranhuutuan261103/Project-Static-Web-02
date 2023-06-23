@@ -1,0 +1,80 @@
+/* Common */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.content {
+    width: 80%;
+    min-width: 1170px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #171100;
+    border-radius: 24.5px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 11px 41px;
+}
+
+/* Header */
+
+.header {
+    background: #FFFCF4;
+}
+
+.header.fixed{
+    position: sticky;
+    top: -28px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+.header .navbar .navbar_list {
+    display: flex;
+    margin-left: auto;
+    margin-right: 70px;
+    list-style: none;
+    align-items: center;
+}
+
+.header .navbar .navbar_list .navbar_item a {
+    position: relative;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    padding: 10px 21px;
+}
+
+.header .navbar .navbar_list .navbar_item a:hover{
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .navbar .navbar_list .navbar_item a:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 21px;
+    bottom: 3px;
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
