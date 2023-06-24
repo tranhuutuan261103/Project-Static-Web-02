@@ -1,5 +1,9 @@
 /* Common */
 
+:root{
+    --primary-color: #FFB900;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -11,8 +15,23 @@ body {
 
 .content {
     width: 80%;
-    min-width: 1170px;
+    /* min-width: 1170px; */
     margin: 0 auto;
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-2{
+    --line-clamp: 2;
+}
+
+.word-break-all{
+    word-break: break-all;
 }
 
 a {
@@ -21,6 +40,7 @@ a {
 
 .btn {
     display: inline-block;
+    min-width: 62px;
     background-color: #171100;
     border-radius: 999px;
     text-align: center;
@@ -182,7 +202,7 @@ a {
 .hero .body .hero-content .cta-group .see-cource-btn {
     padding: 17px 33px;
     font-size: 1.8rem;
-    background-color: #FFB900;
+    background-color: var(--primary-color);
 }
 
 .hero .body .hero-content .cta-group .watch-video {
@@ -275,13 +295,15 @@ a {
     height: 40px;
     margin-left: 18px;
     border-radius: 50%;
-    border: 1px solid #FFB900;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     background-color: transparent;
     cursor: pointer;
 }
 
-.popular .popular-top .control .control-btn:last-child {
-    background-color: #FFB900;
+.popular .popular-top .control .control-btn:hover {
+    color: white;
+    background-color: var(--primary-color);
 }
 
 /* List item */
@@ -290,24 +312,33 @@ a {
     margin-top: 55px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .popular .list-item .item {
     width: 370px;
     height: 466px;
+    flex: 1;
     border-radius: 12px;
     background: #FFF;
-    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #E2DFDA;
 }
 
 .popular .list-item .item img {
     height: 60%;
     width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     object-fit: cover;
 }
 
 .popular .list-item .item .detail-item {
     padding: 16px 24px 24px;
+}
+
+.popular .list-item .item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
 
 .popular .list-item .item .detail-item .row-top {
@@ -316,7 +347,8 @@ a {
     align-items: center;
 }
 
-.popular .list-item .item .detail-item .row-top .sub-title {
+.popular .list-item .item .detail-item .row-top .sub-title a {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -356,14 +388,15 @@ a {
 }
 
 .popular .list-item .item .detail-item .row .popular-btn {
+    min-width: 70px;
     padding: 12px 24px;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 26px;
 }
 
-.popular .list-item .item:first-child .detail-item .row .popular-btn {
-    background-color: #FFB900;
+.popular .list-item .item .detail-item .row .popular-btn:hover {
+    background-color: var(--primary-color);
 }
 
 /*===================== Feedback ====================== */
@@ -422,7 +455,7 @@ a {
 }
 
 .feedback .carousel-indicators .active{
-    background-color: #FFB900;
+    background-color: var(--primary-color);
 }
 
 .feedback .content-feedback {
