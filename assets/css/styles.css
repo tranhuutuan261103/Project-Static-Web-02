@@ -1,6 +1,6 @@
 /* Common */
 
-:root{
+:root {
     --primary-color: #FFB900;
 }
 
@@ -19,18 +19,18 @@ body {
     margin: 0 auto;
 }
 
-.line-clamp{
+.line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.line-clamp.line-2{
+.line-clamp.line-2 {
     --line-clamp: 2;
 }
 
-.word-break-all{
+.word-break-all {
     word-break: break-all;
 }
 
@@ -407,7 +407,7 @@ a {
     background-color: #2E2100;
 }
 
-.feedback .feedback-list{
+.feedback .feedback-list {
     display: flex;
     overflow: hidden;
 }
@@ -447,21 +447,21 @@ a {
     line-height: 1.86;
 }
 
-.feedback .carousel-indicators{
+.feedback .carousel-indicators {
     display: flex;
     align-items: center;
     gap: 6px;
     margin-top: 28px;
 }
 
-.feedback .carousel-indicators .carousel-indicator{
+.feedback .carousel-indicators .carousel-indicator {
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: #634700;
 }
 
-.feedback .carousel-indicators .active{
+.feedback .carousel-indicators .active {
     background-color: var(--primary-color);
 }
 
@@ -479,7 +479,7 @@ a {
     line-height: 1.54;
 }
 
-.feedback .content-feedback .comment::before{
+.feedback .content-feedback .comment::before {
     content: "";
     width: 30px;
     height: 28px;
@@ -489,4 +489,71 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/* ================= features ======================= */
+
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.features .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .images .lower{
+    margin-top: 34px;
+}
+
+.features .feature-content {
+    width: 41%;
+}
+
+.features .feature-content .heading {
+    color: #171100;
+    font-size: 3.8rem;
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.76px;
+}
+
+.features .feature-content .desc {
+    margin-top: 16px;
+    color: #5F5B53;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.features .feature-content .cta-btn {
+    margin-top: 32px;
+    padding: 11px 37px;
+    border-radius: 26px;
+    background: var(--primary-color);
+    line-height: 1.75;
+}
+
+.features-2nd {
+    margin-top: 70px;
+    margin-bottom: 135px;
+}
+
+.features-2nd .images img{
+    width: 470px;
+    height: 440px;
 }
